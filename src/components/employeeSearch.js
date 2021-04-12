@@ -89,7 +89,7 @@ const EmployeeSearch = () => {
                 <input type="text" value={search} onChange={(e)=>{setSearch(e.target.value)}} placeholder="Enter First Name" required></input>
             </div>
             <br />
-            <div>
+            <div className="table-responsive">
                 <table className="table" style={{border:"1px black solid",backgroundColor:"white"}}>
                     <thead>
                         <tr>
