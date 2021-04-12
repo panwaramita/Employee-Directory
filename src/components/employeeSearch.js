@@ -55,7 +55,7 @@ const EmployeeSearch = () => {
         {
             setShort('desc');
             document.getElementById("sortEmp").innerHTML="";
-           document.getElementById("sortEmp").innerHTML="<i class='fa fa-sort-desc' style={color:red}></i>";
+           document.getElementById("sortEmp").innerHTML="<i class='fa fa-sort-desc' style='color:red'></i>";
           const data=await  filteredEmployee.sort(function (a, b) {
                 if (a.name.first < b.name.first) {
                     return -1;
@@ -70,7 +70,7 @@ const EmployeeSearch = () => {
         else {
             setShort('asc')
             document.getElementById("sortEmp").innerHTML="";
-           document.getElementById("sortEmp").innerHTML="<i class='fa fa-sort-asc' style={color:red}></i>";
+           document.getElementById("sortEmp").innerHTML="<i class='fa fa-sort-asc' style='color:red'></i>";
             const data=await  filteredEmployee.sort(function (a, b) {
                 if (a.name.first > b.name.first) {
                     return -1;
