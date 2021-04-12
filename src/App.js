@@ -4,7 +4,7 @@ import Header from './components/header'
 import EmployeeSearch from './components/employeeSearch';
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"pink"}}>
       <Header/>
       <br></br>
       <EmployeeSearch/>

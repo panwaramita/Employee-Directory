@@ -5,14 +5,15 @@ const EmployeeList=(props)=>{
 return(
     <tr>
         <td>
+         <img src={props.image} alt="Profile picture"></img>
+        </td>
+        <td>
             {props.firstName}
         </td>
         <td>
             {props.lastName}
         </td>
-        <td>
-            {props.uuid}
-        </td>
+        
         <td>
             {props.gender}
         </td>

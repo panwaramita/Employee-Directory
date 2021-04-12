@@ -86,13 +86,16 @@ const EmployeeSearch = () => {
     return (
         <div className="container">
             <div style={{ textAlign: "center" }}>
-                <input type="text" value={search} onChange={(e)=>{setSearch(e.target.value)}} placeholder="Enter first Name" required></input>
+                <input type="text" value={search} onChange={(e)=>{setSearch(e.target.value)}} placeholder="Enter First Name" required></input>
             </div>
             <br />
             <div>
-                <table className="table">
+                <table className="table" style={{border:"1px black solid",backgroundColor:"white"}}>
                     <thead>
                         <tr>
+                        <th>
+                            Picture
+                        </th>
                             <th style={{cursor:"pointer"}}>
                                 <div>First Name
                                 <span onClick={shortName} id="sortEmp"><i className="fa fa-sort-asc"></i></span>
@@ -101,9 +104,7 @@ const EmployeeSearch = () => {
                             <th>
                                 Last Name
                         </th>
-                            <th>
-                                UID
-                        </th>
+                         
                             <th>
                                 Gender
                         </th>
@@ -118,7 +119,7 @@ const EmployeeSearch = () => {
                     </thead>
                     <tbody>
                         {
-                            filteredEmployee.map(ele => <EmployeeList key={ele.login.uuid} firstName={ele.name.first} lastName={ele.name.last} uuid={ele.login.uuid} gender={ele.gender} email={ele.email} age={ele.dob.age} />)}
+                            filteredEmployee.map(ele => <EmployeeList key={ele.login.uuid} firstName={ele.name.first} lastName={ele.name.last} image={ele.picture.thumbnail} gender={ele.gender} email={ele.email} age={ele.dob.age} />)}
                     </tbody>
                 </table>
             </div>
