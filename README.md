@@ -13,15 +13,15 @@
 
 * The Employee Directory project allow employee or manager to view non-sensitive data about other employees.
 * The Manager will be able to:
-
-- Sort the employees  by name
-- Filter the employees by name.
+    * Sort the employees  by name.
+    * Filter the employees by name.
 
 ## Installation
 
 * node js 
 * Visual Studio Code 1.51.1
 * React
+* axios
 
 ## License
 
