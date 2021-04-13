@@ -1,5 +1,6 @@
+//import the react 
 import React from 'react';
-
+//create the header function to set the header of the app
 const Header=()=>{
     return(
         <div style={{backgroundColor:"blueviolet"}}>
@@ -7,5 +8,5 @@ const Header=()=>{
         </div>
     )
 }
-
+//export the header
 export default Header;
