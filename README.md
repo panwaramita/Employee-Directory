@@ -6,6 +6,7 @@
 
 * [Introduction](#Introduction)
 * [Installation](#Installation)
+* [Screenshot](#Screenshot)
 * [License](#License)
 * [Link](#Link)
 
@@ -22,6 +23,9 @@
 * Visual Studio Code 1.51.1
 * React
 * axios
+
+## Screenshot
+![image](./public/screenshot.png)
 
 ## License
 
